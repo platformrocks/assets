@@ -95,9 +95,9 @@ Use o instalador oficial do [Node.js LTS](https://nodejs.org/en/download). Não 
 
 ---
 
-### 4. Yarn (Clássico v1)
+### 4. Yarn 
 
-O Backstage exige o Yarn Clássico (v1.22.x) para gerenciamento de dependências.
+O Backstage exige o Yarn para gerenciamento de dependências.
 
 ```bash
 npm install -g yarn
@@ -106,11 +106,8 @@ npm install -g yarn
 > Verifique a versão:
 
 ```bash
-yarn --version  # Deve ser 1.22.x
+yarn --version  
 ```
-
-> ❌ Não utilize Yarn v3, pois ele é incompatível com o setup atual do Backstage.
-
 ---
 
 ### 5. Docker
