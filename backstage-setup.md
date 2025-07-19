@@ -6,7 +6,7 @@ Este guia fornece instruções detalhadas para configurar o ambiente de desenvol
 
 ---
 
-## 🔧 Requisitos de Sistema
+## Requisitos de Sistema
 
 ### Sistema Operacional
 
@@ -43,7 +43,7 @@ Use o terminal **Git Bash** ou **PowerShell com Node.js no PATH**.
 
 ---
 
-## 📂 Dependências Obrigatórias
+## Dependências Obrigatórias
 
 ### 1. Git
 
@@ -134,7 +134,7 @@ Instale o [Docker Desktop para Windows](https://www.docker.com/products/docker-d
 
 ---
 
-## 🔍 Verificação Final
+## Verificação Final
 
 Execute os comandos abaixo para verificar se tudo está corretamente instalado:
 
@@ -145,6 +145,63 @@ yarn -v
 git --version
 docker --version
 ```
+
+## Instalação do Backstage
+
+Após instalar as dependências obrigatórias (Node.js, Yarn, Git, etc.), siga os passos abaixo para instalar o Backstage localmente.
+
+---
+
+### 1. Criar o Projeto
+
+```bash
+npx @backstage/create-app@latest
+```
+
+#### Durante o processo:
+
+* Dê um nome para sua aplicação (ex: `meu-backstage`).
+* Aguarde a instalação dos pacotes e a configuração inicial.
+
+Ao final, você terá uma estrutura como:
+
+```
+backstage/
+├── packages/
+│   ├── app/        # Frontend React
+│   └── backend/    # Backend Express + Plugins
+├── plugins/        # Plugins customizados
+├── app-config.yaml # Configuração principal
+```
+
+---
+
+### 2. Entrar na pasta do projeto
+
+```bash
+cd backstage
+```
+
+---
+
+### 3. Rodar localmente em modo desenvolvimento
+
+```bash
+yarn start 
+```
+
+
+* Isso inicia o frontend em `http://localhost:3000`
+* E o backend em `http://localhost:7007`
+
+---
+
+### 4. Verificar a aplicação
+
+Acesse [http://localhost:3000](http://localhost:3000) no navegador para ver sua instância do Backstage rodando.
+
+
+Pronto. O Backstage está instalado e pronto para ser customizado ou expandido com plugins, catálogo e integrações.
 
 ---
 
