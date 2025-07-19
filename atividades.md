@@ -205,7 +205,7 @@ pageTheme: {
 ## 🔗 Referências Oficiais e Complementares
 
 Backstage Theme:
-  * [[https://backstage.io/docs/reference/theming/](https://backstage.io/docs/reference/theming/)](https://backstage.io/docs/getting-started/app-custom-theme/)
+  * [https://backstage.io/docs/getting-started/app-custom-theme/](https://backstage.io/docs/getting-started/app-custom-theme/)
   * [https://github.com/backstage/backstage/tree/master/packages/theme/src/base](https://github.com/backstage/backstage/tree/master/packages/theme/src/base)
   * [https://github.com/backstage/backstage/blob/master/packages/theme/src/base/palettes.ts](https://github.com/backstage/backstage/blob/master/packages/theme/src/base/palettes.ts)
  
